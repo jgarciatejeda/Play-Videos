@@ -24,4 +24,20 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
   def randomString(length: Int) = Action {
     Ok(util.Random.nextString(length))
   }
+
+  def dashboard() = Action {
+    Ok("Dashboard here.")
+  }
+
+  def incidentform() = Action {
+    Ok("Incident Form here.")
+  }
+
+  def oshaform() = Action {
+    Ok("Osha Form here.")
+  }
+
+  def phoneapp() = Action {
+    Ok("App here.")
+  }
 }
